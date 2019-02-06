@@ -1,25 +1,19 @@
 ---
-title: My second Blog post
-date: '2018-12-02'
-tags: ['javascript','react']
+title: "Economics: International trade"
+description: This post is related to the gatsbyjs
+date: '2018-12-31'
+tags: ['economics']
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-when an unknown printer took a galley of type and scrambled it to make a type
-specimen book. It has survived not only five centuries, but also the leap into
-electronic typesetting, remaining essentially unchanged. It was popularised in
-the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-and more recently with desktop publishing software like Aldus PageMaker
-including versions of Lorem Ipsum.
-
-## Why do we use it?
-
-It is a long established fact that a reader will be distracted by the
-readable content of a page when looking at its layout. The point of using
-Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-as opposed to using 'Content here, content here', making it look like readable
-English. Many desktop publishing packages and web page editors now use Lorem Ipsum
-as their default model text, and a search for 'lorem ipsum' will uncover many web
-sites still in their infancy. Various versions have evolved over the years, sometimes
-by accident, sometimes on purpose (injected humor and the like).
+- lowers costs for consumers, extra money is spent in domestic economy
+- reshuffles job from different industries but quality of jobs differ 
+- depends on demand, interest rate, exchange rate, political stability
+- When dollar appreciates, cheaper for consumers to import and exports are more expensive
+- When dollar depreciates, each dollar gets less powerful, imports get expensive, exports cheaper
+- Balance of payments
+    - Current account
+        - Investment income, sale and purchase, foreign aid
+    - Financial/capital account
+        - Stocks and bonds
+        - Selling assets to pay for imports 
+            - US does this, they mean to run trade deficit 

@@ -1,8 +1,8 @@
 ---
-title: "Data Structures: Hash Maps Part 2"
-description: This post is related to data structures
+title: "Data Structures: Hash Maps Part 1"
 date: '2019-01-10'
-image: 'hashmap-ex2.png'
+image: 'hashmap-ex.png'
+tags: ['data structures']
 ---
 
 A map of a collection of key value pairs. The structure tries to do constant time. 
@@ -19,7 +19,7 @@ b) Collision Resolution
 - n = # of elements
 - N = # of cells
 
-#####**Collision Resolution**: Quadratic Probing
+#####**Collision Resolution**: Linear Probing
 ____
 1. find element h[key]
 2. probe each consecutive location until:

@@ -1,16 +1,18 @@
 import React from 'react';
 
+import './prevnext.css'
+
 const PrevNext = (props) => {
 
     const { prev, next } = props
 
     return (
-        <ul>
-            {prev && <li><a href={prev.fields.slug}>
-                Previous {" "}
+        <ul className="prevnext">
+            {prev && <li className="prev"><a href={prev.fields.slug}>
+                Previous: {" "}
                 {prev.frontmatter.title}</a></li>}
-            {next && <li><a href={next.fields.slug}>
-                Next  {" "} {next.frontmatter.title}
+            {next && <li className="next"><a href={next.fields.slug}>
+                Next: {" "} {next.frontmatter.title}
 
             </a></li>}
         </ul>

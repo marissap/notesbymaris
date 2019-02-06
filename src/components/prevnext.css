@@ -1,0 +1,21 @@
+.prevnext a {
+    color: #A5BCCA;
+    text-decoration: none;
+}
+
+.prevnext a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.prevnext {
+    list-style: none;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}

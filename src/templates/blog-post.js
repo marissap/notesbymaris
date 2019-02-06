@@ -28,7 +28,9 @@ function BlogPost(props) {
                 pathname={props.location.pathname}
             />
             <div>
-                <h1>{title}</h1>
+                <h1 style={{
+                    color: '#A5BCCA',
+                }}>{title}</h1>
                 {image && <Img fluid={image.childImageSharp.fluid} />}
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
                 <div>

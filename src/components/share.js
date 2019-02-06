@@ -12,8 +12,7 @@ const Share = props => {
         props.pathname}`;
 
     return (
-        <div>
-            <h3 className="center">Share</h3>
+        <div className="center">
             <ul className="social">
                 <li>
                     <a href={fb} target="blank">
