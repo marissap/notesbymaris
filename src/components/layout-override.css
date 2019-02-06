@@ -30,7 +30,7 @@ footer {
 }
 
 .post-list:hover h1 {
-    background: #e5aeae;
+    background: rgb(241, 137, 137);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -47,4 +47,10 @@ footer {
 
 .header-overlay {
     opacity: 0.8;
+}
+
+@media (max-width: 560px) {
+    footer {
+        margin-top: 40%;
+    }
 }

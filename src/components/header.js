@@ -35,11 +35,11 @@ const Header = () => (
           </div>
           <div style={{display: 'flex', justifyContent: 'center'}}>
               <a href="https://github.com/marissap/"
-                style={{ color: "#e5aeae", textDecoration: "none"}} title="github" >Github | </a>
+                style={{ color: "rgb(241, 137, 137)", textDecoration: "none"}} title="github" >Github | </a>
                 <Link
                   to="/tags"
                   style={{
-                    color: '#e5aeae',
+                    color: 'rgb(241, 137, 137)',
                     textDecoration: 'none',
                   }}
                 >
@@ -48,16 +48,16 @@ const Header = () => (
               <Link
                   to="/about"
                   style={{
-                    color: '#e5aeae',
+                    color: 'rgb(241, 137, 137)',
                     textDecoration: 'none',
                   }}
                 >
                 | About |
               </Link>    
               <Link
-                  to="/about"
+                  to="/contact"
                   style={{
-                    color: '#e5aeae',
+                    color: 'rgb(241, 137, 137)',
                     textDecoration: 'none',
                   }}
                 >

@@ -30,6 +30,7 @@ function BlogPost(props) {
             <div>
                 <h1 style={{
                     color: '#A5BCCA',
+                    marginTop: '5%',
                 }}>{title}</h1>
                 {image && <Img fluid={image.childImageSharp.fluid} />}
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
