@@ -5,9 +5,9 @@ date: '2018-12-31'
 tags: ['economics']
 ---
 
-- lowers costs for consumers, extra money is spent in domestic economy
-- reshuffles job from different industries but quality of jobs differ 
-- depends on demand, interest rate, exchange rate, political stability
+- Lowers costs for consumers, extra money is spent in domestic economy
+- Reshuffles job from different industries but quality of jobs differ 
+- Depends on demand, interest rate, exchange rate, political stability
 - When dollar appreciates, cheaper for consumers to import and exports are more expensive
 - When dollar depreciates, each dollar gets less powerful, imports get expensive, exports cheaper
 - Balance of payments

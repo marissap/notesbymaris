@@ -18,6 +18,7 @@ const Header = () => (
               style={{
                 color: 'black',
                 textDecoration: 'none',
+                fontWeight: '900',
               }}
             >
               Maris' Notes
@@ -29,39 +30,46 @@ const Header = () => (
                 color: 'black',
                 textDecoration: 'none',           
                 fontStyle: 'italic',
+                fontWeight: '900',
               }}>          
               constantly updated collection of notes from my journey for knowledge
             </p>            
           </div>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
+          <div style={{display: 'flex', justifyContent: 'center',}}>
               <a href="https://github.com/marissap/"
-                style={{ color: "rgb(241, 137, 137)", textDecoration: "none"}} title="github" >Github | </a>
+                style={{ color: "black", textDecoration: "none", fontWeight: '400',}} title="github" >Github </a>
+                <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>
                 <Link
                   to="/tags"
                   style={{
-                    color: 'rgb(241, 137, 137)',
+                    color: 'black',
                     textDecoration: 'none',
+                    fontWeight: '400',
                   }}
                 >
-                | All tags |
+                All tags
               </Link>
+              <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>
               <Link
                   to="/about"
                   style={{
-                    color: 'rgb(241, 137, 137)',
+                    color: 'black',
                     textDecoration: 'none',
+                    fontWeight: '400',
                   }}
                 >
-                | About |
-              </Link>    
+                About
+              </Link>
+              <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>   
               <Link
                   to="/contact"
                   style={{
-                    color: 'rgb(241, 137, 137)',
+                    color: 'black',
                     textDecoration: 'none',
+                    fontWeight: '400',
                   }}
                 >
-                | Contact
+                Contact
               </Link>         
           </div>
 {}        

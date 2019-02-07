@@ -4,9 +4,10 @@ import Layout from '../components/layout'
 const NewPage = () => (
     <Layout>
         <div>
-            <strong>About the blog</strong>
+            <br></br>
+            <h1>About the blog</h1>
             <p>A collection of notes I make while reading and learning. Topics include economics, computer science, philosophy, neuroscience, anything that peaks my interest.</p>
-            <strong>About the author</strong>
+            <h1>About the author</h1>
             <p>Computer science student. Software developer. Runner.</p>
         </div>
     </Layout>

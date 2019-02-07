@@ -197,7 +197,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Thasadith', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -227,7 +227,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Thasadith, sans-serif;
+  font-family: 'Thasadith', sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
