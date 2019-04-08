@@ -40,5 +40,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
