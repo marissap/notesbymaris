@@ -37,15 +37,15 @@ footer {
 }
 
 .post-list:hover h1 {
-    background: rgb(241, 137, 137);
+    background: rgb(87, 199, 230);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .final-header {
     height: 85vh;
-    /* background: url(https://images.unsplash.com/photo-1481697943534-ea55b5ce970b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2088&q=80) no-repeat center center fixed; */
-    background: url(https://images.unsplash.com/photo-1526243741027-444d633d7365?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80) no-repeat center center fixed;
+    background: url(https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1484&q=80) no-repeat center center fixed;
+    /* https://images.unsplash.com/photo-1490358930084-2d26f21dc211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80 */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

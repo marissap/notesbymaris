@@ -38,7 +38,7 @@ const Header = () => (
           <div style={{display: 'flex', justifyContent: 'center',}}>
               <a href="https://github.com/marissap/"
                 style={{ color: "black", textDecoration: "none", fontWeight: '400',}} title="github" >Github </a>
-                <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>
+                <p style={{ color: "rgb(87, 199, 230)", fontSize: "250%"}}>•</p>
                 <Link
                   to="/tags"
                   style={{
@@ -49,7 +49,7 @@ const Header = () => (
                 >
                 All tags
               </Link>
-              <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>
+              <p style={{ color: "rgb(87, 199, 230)", fontSize: "250%"}}>•</p>
               <Link
                   to="/about"
                   style={{
@@ -60,7 +60,7 @@ const Header = () => (
                 >
                 About
               </Link>
-              <p style={{ color: "rgb(241, 137, 137)", fontSize: "250%"}}>•</p>   
+              <p style={{ color: "rgb(87, 199, 230)", fontSize: "250%"}}>•</p>   
               <Link
                   to="/contact"
                   style={{
