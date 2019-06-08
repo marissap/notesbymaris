@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/reponame",
   siteMetadata: {
     title: 'Myblog -by reactgo.com',
     siteUrl: 'https://reactgo.com',
