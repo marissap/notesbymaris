@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import './layout-override.css'
+import BackgroundImage from '../images/header.jpeg';
 
 const Header = () => (
-  <div class="final-header">
+  <div class="final-header" style={{ background: `url(${BackgroundImage})` }}>
     <div class="header-overlay">
       <div
         style={{
@@ -36,7 +37,7 @@ const Header = () => (
             </p>            
           </div>
           <div style={{display: 'flex', justifyContent: 'center',}}>
-              <a href="https://github.com/marissap/"
+              <a href="https://github.com/marissap/" target="_blank"
                 style={{ color: "black", textDecoration: "none", fontWeight: '400',}} title="github" >Github </a>
                 <p style={{ color: "rgb(87, 199, 230)", fontSize: "250%"}}>•</p>
                 <Link

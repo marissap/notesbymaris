@@ -44,7 +44,7 @@ footer {
 
 .final-header {
     height: 85vh;
-    background: url(https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1484&q=80) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     /* https://images.unsplash.com/photo-1490358930084-2d26f21dc211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80 */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -53,7 +53,11 @@ footer {
 }
 
 .header-overlay {
-    opacity: 0.8;
+    opacity: 0.6;
+}
+
+.final-header .header-overlay h1:hover {
+    color: red;
 }
 
 @media (max-width: 560px) {

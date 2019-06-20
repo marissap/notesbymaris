@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/notesbymaris",
   siteMetadata: {
-    title: 'Myblog -by reactgo.com',
-    siteUrl: 'https://reactgo.com',
+    title: 'Notes by maris',
+    siteUrl: 'https://marissap.github.io/notesbymaris/',
     pathPrefix: "/notesbymaris",
   },
   plugins: [
