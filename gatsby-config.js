@@ -1,5 +1,9 @@
 module.exports = {
+<<<<<<< HEAD
   pathPrefix: "/notesbymaris",
+=======
+  pathPrefix: "/reponame",
+>>>>>>> b6fd0544c6c6ba427c3722515a9a59c11b1462a7
   siteMetadata: {
     title: 'Notes by maris',
     siteUrl: 'https://marissap.github.io/notesbymaris/',
