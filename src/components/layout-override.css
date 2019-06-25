@@ -5,13 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kalam|Quicksand');
 
-* {
-    background: #F5F5F5;
-    color: black;
-}
-
 html {
     height: 100%;
+    color: black;
 }
 
 body {
@@ -37,27 +33,66 @@ footer {
 }
 
 .post-list:hover h1 {
-    background: rgb(87, 199, 230);
+    background: #A5BCCA;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .final-header {
-    height: 85vh;
-    background: no-repeat center center fixed;
-    /* https://images.unsplash.com/photo-1490358930084-2d26f21dc211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80 */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: white;
+    padding: 0px;
+    margin: 0 auto;
+    padding: 2rem 1.0875rem 0;
 }
 
-.header-overlay {
-    opacity: 0.6;
+.final-header:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid rgb(219, 219, 219); /* This creates the border. Replace black with whatever color you want. */
 }
 
-.final-header .header-overlay h1:hover {
-    color: red;
+.final-header p {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;       
+    font-style: italic;
+}
+
+.final-header Link,
+.final-header a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.final-header .header-text h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.final-header .header-text p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.final-header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.final-header .nav Link,
+.final-header .nav a {
+    color: #53bbce;
+    padding-right: 10px;
+}
+
+.final-header .nav Link:hover,
+.final-header .nav a:hover {
+    color: black;
 }
 
 @media (max-width: 560px) {

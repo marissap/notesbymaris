@@ -8,7 +8,7 @@ import './layout-override.css'
 
 // StaticQuery which is querying for the site title the data which comes back from the query is stored inside the data property.
 
-const Layout = ({ children }) => (
+const Layout = ({ children }) => (  
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -19,9 +19,9 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={data => (      
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title}/>
         <div
           style={{
             margin: `0 auto`,

@@ -1,5 +1,4 @@
- .link {
-
+.link {
     text-decoration: none;
     color: black;
 }
@@ -28,7 +27,7 @@ img {
 .tags a {
     margin-bottom: 2rem;
     list-style: none;
-        background-color: #ececec;
+    background-color: #ececec;
     border: 1px solid #ffff;
     border: 1px solid #ffff;
     width: 80%;
