@@ -8,7 +8,7 @@ const Header = () => (
   <div className="final-header">    
     <div className="header-text">
       <h1><Link to="/">Notes by Maris</Link></h1>
-      <p>constantly updated collection of notes from my journey for knowledge</p>
+      <p>notes from my journey for knowledge</p>
     </div>
     <div className="nav">
       <Link to="/about">About</Link>

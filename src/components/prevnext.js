@@ -8,10 +8,10 @@ const PrevNext = (props) => {
 
     return (
         <ul className="prevnext">
-            {prev && <li className="prev"><a href={prev.fields.slug}>
+            {prev && <li className="prev"><a href={"/notesbymaris" + prev.fields.slug}>
                 Previous: {" "}
                 {prev.frontmatter.title}</a></li>}
-            {next && <li className="next"><a href={next.fields.slug}>
+            {next && <li className="next"><a href={"/notesbymaris" + next.fields.slug}>
                 Next: {" "} {next.frontmatter.title}
 
             </a></li>}

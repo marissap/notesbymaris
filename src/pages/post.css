@@ -27,9 +27,8 @@ img {
 .tags a {
     margin-bottom: 2rem;
     list-style: none;
-    background-color: #ececec;
-    border: 1px solid #ffff;
-    border: 1px solid #ffff;
+    /* background-color: #dddddd; */
+    border-left: 2px solid #D3D3D3;
     width: 80%;
     padding: 1rem;
     text-decoration: none;
@@ -37,3 +36,6 @@ img {
     color: rgb(31, 26, 26);
 }
 
+.tags a:hover {
+    background-color: rgba(238, 236, 236, 0.301);
+}
