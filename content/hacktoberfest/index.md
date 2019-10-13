@@ -14,3 +14,5 @@ I've wanted to participate in Hacktoberfest for awhile but was intimidated. But 
 Anyway, so it seemed like the right time to dive in. And oh boy was it great. I discovered some incredibly unqiue and innovate projects which while I was not ready to contribute to, I'm now following and will hopefully be able to lend a hand soon. My greatest achievement though, I got a non-trivial pull request merged!!! I added a new page to a projects website that lists contributors to the project (technical and non-technical) and was able to design it!! (I like making things look pretty).
 
 This is getting long and I like to keep this blog short so to wrap things up, Hacktoberfest is great for introducing people to open source, people are creating some truly creative, democratic tech with open source, and the developer community is very welcoming to newcomers. Thank you Digital Ocean and DEV.to for this year's Hactoberfest and thank you everyone who merged my pull requests.
+
+*Edited 13-Oct* Officially passed the grace-period!
