@@ -2,7 +2,7 @@
 title: "My favourite quotes"
 description: A collection of my favourite quotes. Updated whenever.
 date: '2018-12-31'
-image: 'lights.jpg'
+image: './lights.jpg'
 tags: ['quotes']
 ---
 

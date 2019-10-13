@@ -1,7 +1,7 @@
 ---
 title: "Java: Abstract Class v. Interface"
 date: '2019-02-21'
-image: ''
+image:
 tags: ['java']
 ---
 

@@ -6,23 +6,16 @@ module.exports = {
     pathPrefix: "/notesbymaris",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        path: `${__dirname}/content`,
+        name: "pages",
       },
     },
-    `gatsby-plugin-catch-links`,
-    'gatsby-plugin-offline',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -32,11 +25,18 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        path: `${__dirname}/content`,
-        name: "pages",
+        name: 'gatsby-notes-by-maris',
+        short_name: 'notesbymaris',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png',
       },
     },
+    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-offline'    
   ],
 }

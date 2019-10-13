@@ -2,7 +2,7 @@
 title: "Data Structures: Hash Maps Part 2"
 description: This post is related to data structures
 date: '2019-01-10'
-image: 'hashmap-ex2.png'
+image: './hashmap-ex2.png'
 tags: ['data structures']
 ---
 

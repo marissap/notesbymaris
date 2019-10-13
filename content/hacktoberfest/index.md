@@ -1,7 +1,7 @@
 ---
 title: "My First Hacktoberfest"
 date: '2019-10-12'
-image: ''
+image:
 tags: ['open source', 'hacktoberfest']
 ---
 

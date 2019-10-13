@@ -1,7 +1,7 @@
 ---
 title: "Data Structures: Hash Maps Part 1"
 date: '2019-01-10'
-image: 'hashmap-ex.png'
+image: './hashmap-ex.png'
 tags: ['data structures']
 ---
 
