@@ -16,15 +16,21 @@ button:hover {
 }
 
 footer {
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 12px;
 }
 
+.post-list h1 {
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0em 1.1em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+}
+
 .post-list:hover h1 {
-    background: #A5BCCA;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    background-position: 0 -0.1em;
 }
 
 .final-header {

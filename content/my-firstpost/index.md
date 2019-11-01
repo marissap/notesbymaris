@@ -1,6 +1,6 @@
 ---
 title: "Economics: Unemployment"
-description: This post is related to the gatsbyjs
+description: 'Some notes on the types of unemployment in developed economies.'
 date: '2018-12-31'
 tags: ['economics']
 ---

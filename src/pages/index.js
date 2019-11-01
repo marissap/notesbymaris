@@ -8,20 +8,21 @@ const IndexPage = (props) => {
   return (
     <div>
       <div className="columnsContainer">
-        <div className="leftColumn">    
-          <nav>
-            <ul className="nav inline-items">
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/tags">All tags</Link></li>
-              <li><a href="https://github.com/marissap/" target="_blank" rel="noopener noreferrer" title="github" >Github</a></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </nav>                
+        <div className="leftColumn">                             
           <div className="wrapper">
-            <div className="mug">
-              <div className="handle"></div>
+            <div className="title">
+              <h1>Notes<br/>
+              by<br/>
+              Maris</h1>
             </div>
-            <h1>Notes by Maris</h1>
+            <nav>
+              <ul className="nav inline-items">
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/tags">All tags</Link></li>
+                <li><a href="https://github.com/marissap/" target="_blank" rel="noopener noreferrer" title="github" >Github</a></li>
+                <li><Link to="/contact">Contact</Link></li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div className="rightColumn">
@@ -30,7 +31,7 @@ const IndexPage = (props) => {
               <div className="post-list">
                 <h1>{node.frontmatter.title}</h1>
                 <span>{node.frontmatter.date}</span>
-                <p>{node.excerpt}</p>
+                <p>{node.frontmatter.description}</p>
               </div>
             </Link>
           ))}
@@ -52,8 +53,9 @@ export const listQuery = graphql`
           }
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM Do YYYY")
+            date(formatString: "DD.MM.YY")
             title
+            description
           }
         }
       }

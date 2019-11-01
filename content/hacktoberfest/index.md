@@ -1,8 +1,9 @@
 ---
 title: "My First Hacktoberfest"
 date: '2019-10-12'
-image: ''
+image:
 tags: ['open source', 'hacktoberfest']
+description: 'Hacktoberfest is a month-long celebration of open source software run by DigitalOcean and DEV.'
 ---
 
 This October marked my first dive into open source and I gotta say, I'm a fan.

@@ -1,12 +1,11 @@
 module.exports = {
   pathPrefix: "/notesbymaris",
   siteMetadata: {
-    title: 'Notes by maris',
+    title: 'Notes by Maris | Marissa Phul',
     siteUrl: 'https://marissap.github.io/notesbymaris/',
     pathPrefix: "/notesbymaris",
   },
-  plugins: [
-    'gatsby-plugin-react-helmet',
+  plugins: [    
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -21,6 +20,7 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-react-helmet',
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-offline',
     {
@@ -28,6 +28,12 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-prismjs`,
+          {
+            resolve: "gatsby-remark-normalize-paths",
+              options: {
+              pathFields: ["image"],
+              },
+          }
         ]
       }
     },

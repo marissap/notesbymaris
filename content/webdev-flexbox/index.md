@@ -1,6 +1,6 @@
 ---
 title: "Web Dev: Flexbox"
-description: This post is related to using flexbox in web dev
+description: Exploring Flexbox, a web layout model of responsive elements within a container.
 date: '2019-03-04'
 image: 
 tags: ['web dev']

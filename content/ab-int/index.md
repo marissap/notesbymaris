@@ -1,8 +1,9 @@
 ---
 title: "Java: Abstract Class v. Interface"
 date: '2019-02-21'
-image: ''
+image:
 tags: ['java']
+description: 'Taking a look at two similar but also different ways of managing common method implementation in Java.'
 ---
 
 Preliminary discussion, abstraction is about hiding implementation and only showing functionality.

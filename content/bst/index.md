@@ -3,6 +3,7 @@ title: "Data Structures: Binary Search Trees"
 date: '2019-01-10'
 image: 'bst.png'
 tags: ['data structures']
+description: 'Visualization of a binary search tree and a few notes.'
 ---
 
 Binary Search Trees all nodes smaller than the root are to the left and those larger, to the right. This pattern continues at each node when it is the root.

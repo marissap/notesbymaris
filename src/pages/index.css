@@ -19,22 +19,24 @@ body {
 
 .leftColumn { 
     margin-bottom: .5em;
-    background-color: #A5BCCA;
+    background-color: #f2f2f3;
     text-align: center;
     padding-bottom: 50vh;
 }
 
 .leftColumn h1 {
     color: black;
-    font-size: 300%;
+    font-size: 200%;
     text-transform: uppercase;
+}
+
+.rightColumn h1 {
+    text-transform: lowercase;
 }
 
 .nav {
     list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    text-transform: lowercase;
 }
 
 .nav > li,
@@ -42,7 +44,6 @@ body {
 .nav > li > Link {
     display: inline-block;
     *display: inline;
-    zoom: 1;
     color: black;
     text-decoration: none; 
 }
@@ -75,28 +76,6 @@ body {
     padding-right: 0;
 }
 
-.mug {
-    top: 8%;
-}
-
-@keyframes drink {
-    0% {
-        background-position: 0px 140px;
-    }
-    20% {
-        background-position: -1350px -40px;        
-    }
-    40% {
-        background-position: -900px 50px;
-    }
-    80% {
-        background-position: -450px 100px;
-    }
-    100% {
-        background-position: 0px 140px;
-    }
-}
-
 @media screen and (min-width: 923px ) {
     .leftColumn { 
         margin-right: 27em;
@@ -108,9 +87,9 @@ body {
     }
 
     .leftColumn h1 {
-        color: #241915;
+        color: black;
         font-size: 300%;
-        text-transform: uppercase;
+        text-transform: lowercase;
     }    
 
     .rightColumn { 
@@ -118,43 +97,29 @@ body {
         top: 0; 
         right: 0; 
         width: 25.75em; 
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .wrapper {
-        background-color: #A5BCCA;
-        margin: 0px;
-        padding: 0px;
+        padding : 40px;
+        overflow: hidden;
+        margin: 0px auto;
+        width: 50vw;        
+        text-align: left;
+        color: #EDEEE9;
     }
-    
-    .mug {
-        height: 140px;
-        width: 180px;
-        border: 6px solid #A5BCCA;
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        border-radius: 0px 0px 70px 70px;
-        background: url('../images/coffee.png');
-        background-repeat: repeat-x;
-        background-position: 0px 140px;
-        box-shadow: 0px 0px 0px 6px black;
-        animation: drink 5.5s infinite;    
-    }
-    
-    .handle {
-        height: 70px;
-        width: 40px;
-        background-color: transparent;
-        border: 6px solid black;
-        position: relative;
-        left: 178px;
-        top: 10px;
-        border-radius: 0px 25px 80px 0px;
+
+    .title {
+        font-weight: 600;
+        line-height: 0.8;
+        font-size: 3rem;
     }
 }
 
-@media screen and (max-width: 500px ) {
-    .mug {
-        left: 30%;
+@media screen and (max-width: 999px ) {
+    .title {
+        font-weight: 400;
+        line-height: 0.8;
+        font-size: 2rem;
     }
 }

@@ -227,7 +227,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Thasadith', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -327,7 +327,7 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -339,7 +339,7 @@ ul {
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -516,12 +516,12 @@ ul li {
   padding-left: 0;
 }
 li > ol {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 li > ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }

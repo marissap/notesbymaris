@@ -1,8 +1,9 @@
 ---
 title: "Stats: Confidence Intervals"
 date: '2019-07-22'
-image: ''
+image:
 tags: ['statistics']
+description: 'Who doesn't love statistics!'
 ---
 
 A confidence interval gives an estimated range of values which is likely to include an unknown population parameter. The level of a confidence interval (in percentage) gives the probability that our true value lies in the interval.

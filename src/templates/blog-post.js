@@ -64,11 +64,11 @@ export const query = graphql`
         tags
         image {
           childImageSharp {
-            resize(width: 500, height: 210) {
-              src
+            resize(width: 1000, height: 420) {
+                src
             }
-            fluid(maxWidth: 750) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 786) {
+                ...GatsbyImageSharpFluid
             }
           }
         }

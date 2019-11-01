@@ -1,9 +1,9 @@
 ---
 title: "Notes on Python: Enumerate"
-description: This post is related to python
 date: '2019-06-26'
 image: 
 tags: ['python']
+description: 'The title is also the description.'
 ---
 
 - Enumerate is a python built-in function that gives a list of tuples of the indices and the elements in an iterable
