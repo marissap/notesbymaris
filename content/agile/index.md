@@ -1,9 +1,9 @@
 ---
 title: "Lessons from a Newly Agile Organization"
+description: 'I reflect on the 8 months I spent sworking in an organization that had recently transitioned to Agile.'
 date: '2019-10-02'
 image: 'agile.png'
 tags: ['business', 'agile']
-description: 'I reflect on the 8 months I spent sworking in an organization that had recently transitioned to Agile.'
 ---
 
 #####Intro

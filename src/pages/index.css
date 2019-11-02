@@ -1,13 +1,44 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 *, *:before, *:after {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
 }
   
+html {
+    font: 112.5%/1.45em 'Raleway', sans-serif;
+    font-display: auto;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 body { 
     margin: 0;
 }
 
+h1 {
+    margin-top: 0;
+    margin-bottom: 1.45rem;
+    line-height: 1.1;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+/* Homepage */
 .columnsContainer, footer, header { 
     position: relative; 
     margin: .5em; 
@@ -27,13 +58,28 @@ body {
 .leftColumn h1 {
     color: black;
     font-size: 200%;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .rightColumn h1 {
     text-transform: lowercase;
 }
 
+/* Posts on Homepage */
+.post-list h1 {
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0em 1.1em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+}
+
+.post-list:hover h1 {
+    background-size: 100% 100%;
+    background-position: 0 -0.1em;
+}
+
+/* Navigation */
 .nav {
     list-style: none;
     text-transform: lowercase;
@@ -76,6 +122,25 @@ body {
     padding-right: 0;
 }
 
+/* Tags */
+.blog-post-tags a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.blog-post-tags a:hover {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 5%;
+    font-size: 12px;
+}
+
+/* Responsive Styles */
+/* Homepage */
 @media screen and (min-width: 923px ) {
     .leftColumn { 
         margin-right: 27em;

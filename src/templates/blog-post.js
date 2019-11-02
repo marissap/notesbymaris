@@ -7,9 +7,8 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby'
 import PrevNext from '../components/prevnext';
 import MetaTags from '../components/Metatags';
-import Share from '../components/share';
 
-import '../components/layout-override.css'
+import '../pages/index.css' // global styles
 
 function BlogPost(props) {
 
@@ -28,19 +27,14 @@ function BlogPost(props) {
                 pathname={props.location.pathname}
             />
             <div>
-                <h1 style={{
-                    color: '#A5BCCA',
-                    marginTop: '5%',
-                }}>{title}</h1>
+                <h1>{title}</h1>
                 {image && <Img fluid={image.childImageSharp.fluid} />}
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-                <div>
-                    <span>Tagged in </span>
+                <div className="blog-post-tags">
                     {tags.map((tag, i) => (
-                        <a href={`/${tag}`} key={i} style={{ marginLeft: "10px" }} >{tag}</a>
+                        <a href={`/${tag}`} key={i}>#{tag}</a>
                     ))}
                 </div>
-                <Share title={title} url={url} pathname={props.location.pathname} />
                 <PrevNext prev={prev && prev.node} next={next && next.node} />
             </div>
         </Layout>

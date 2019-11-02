@@ -1,9 +1,9 @@
 ---
 title: "Data Structures: Hash Maps Part 1"
+description: 'Visualization of a hash map and a few notes. Part 1 of 2.'
 date: '2019-01-10'
 image: 'hashmap-ex.png'
-tags: ['data structures']
-description: 'Visualization of a hash map and a few notes. Part 1 of 2.'
+tags: ['data-structures']
 ---
 
 A map of a collection of key value pairs. The structure tries to do constant time. 

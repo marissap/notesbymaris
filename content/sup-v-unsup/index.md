@@ -3,7 +3,7 @@ title: "Machine Learning: Supervised v. Unsupervised"
 description: This post is related to machine learning
 date: '2019-04-14'
 image: 
-tags: ['machine learning']
+tags: ['machine-learning']
 ---
 
 

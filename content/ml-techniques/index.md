@@ -1,9 +1,9 @@
 ---
 title: "Machine Learning: Techniques & Algorithm Types"
+description: 'I have recently been getting into machine learning. I explore the types of ML models.'
 date: '2019-04-14'
 image: 
-tags: ['machine learning']
-description: 'I've recently been getting into machine learning. I explore the types of ML models.'
+tags: ['machine-learning']
 ---
 
 #####Regression/Estimation 

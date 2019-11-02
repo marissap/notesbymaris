@@ -1,30 +1,23 @@
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-import './layout-override.css'
+import '../pages/index.css' // global styles
+import './header.css' // component styles
 
 const Header = () => (
-  <div className="final-header">    
+  <div className="header">    
     <div className="header-text">
       <h1><Link to="/">Notes by Maris</Link></h1>
-      <p>notes from my journey for knowledge</p>
     </div>
-    <div className="nav">
-      <Link to="/about">About</Link>
-      <a href="https://github.com/marissap/" target="_blank" rel="noopener noreferrer" title="github" >Github</a>
-      <Link to="/tags">All tags</Link>
-      <Link to="/contact">Contact</Link>
-    </div>
+    <nav>
+      <ul className="nav inline-items">
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/tags">All tags</Link></li>
+        <li><a href="https://github.com/marissap/" target="_blank" rel="noopener noreferrer" title="github" >Github</a></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </nav>
   </div>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

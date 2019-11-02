@@ -1,9 +1,9 @@
 ---
 title: "Diving into React"
+description: 'React is a popular component-based, declarative library.'
 date: '2019-10-24'
 image:
-tags: ['react', 'web dev', 'learning']
-description: 'React is a popular component-based, declarative library.'
+tags: ['react', 'web-dev', 'learning']
 ---
 
 *Note: I'm following the tutorial from Tania Rascia found [here](https://www.taniarascia.com/getting-started-with-react/) and the wonderful work of Ali Spittel found [here](https://welearncode.com/beginners-guide-react/)*

@@ -3,7 +3,7 @@ title: "Web Dev: Flexbox"
 description: Exploring Flexbox, a web layout model of responsive elements within a container.
 date: '2019-03-04'
 image: 
-tags: ['web dev']
+tags: ['web-dev']
 ---
 
 

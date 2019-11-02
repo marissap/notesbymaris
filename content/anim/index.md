@@ -1,9 +1,9 @@
 ---
 title: "My First Workshop: Animating the Big Dipper"
+description: 'Sharing my experience running a workshop on CSS and Art.'
 date: '2019-10-10'
 image:
-tags: ['animation', 'web dev', 'css']
-description: 'Sharing my experience running a workshop on CSS and Art.'
+tags: ['animation', 'web-dev', 'css']
 ---
 
 On Wednesday October 9 I held my first workshop for the STEAM (STEM + Arts) club on campus of which I am the VP Finance.
