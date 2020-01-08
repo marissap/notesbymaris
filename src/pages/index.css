@@ -8,7 +8,7 @@
 }
   
 html {
-    font: 112.5%/1.45em 'Raleway', sans-serif;
+    font: 100%/1.45em 'Raleway', sans-serif;
     font-display: auto;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -29,10 +29,7 @@ ul {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    padding: 0;
     margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
@@ -122,9 +119,36 @@ ul {
     padding-right: 0;
 }
 
-/* Tags */
-.blog-post-tags a {
+/* Code blocks */
+code[class*="language-"],
+pre[class*="language-"] {
     color: black;
+    line-height: 1.1;
+	font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+pre[class*="language-"] {
+	padding: .5em;
+	margin: .5em 0;
+	overflow: auto;
+    border-radius: 0.3em;    
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #f2f2f3;
+}
+
+.token.function,
+.token.class-name {
+	color: #cb164c; /* yellow */
+}
+
+/* Tags */
+.blog-post-tags a, span {
+    font-size: 100%;
+    color: rgb(109, 109, 109);
     margin-left: 10px;
     text-decoration: none;
 }
@@ -137,6 +161,10 @@ ul {
 footer {
     margin-top: 5%;
     font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /* Responsive Styles */

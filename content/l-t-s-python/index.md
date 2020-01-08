@@ -1,22 +1,21 @@
 ---
-title: "Notes on Python: Enumerate"
+title: "Enumerate in Python"
 description: 'The title is also the description.'
 date: '2019-06-26'
 image: 
 tags: ['python']
 ---
+Enumerate is a python built-in function that create a list of tuples containing the indices and the elements in an iterable. Before I go into an example of using _enumerate_ let's quickly discuss some definitions.
 
-- Enumerate is a python built-in function that gives a list of tuples of the indices and the elements in an iterable
-- Before I go into an example of using _enumerate_ let's quickly discuss my use of the word iterable
-    - __Iteration__: take each item of something
-        - like a loop over a group of elements
-    - __Iterable__ and __iterator__ have different and specific meanings in Python
-    - __Iterable__ is an object that can be used as a sequence which defines an _iter_ method (which allows loops) or and _next_ method (which accesses each element one at a time)
-        - iterable object types includes lists, strings, dictionaries and sets.
-        - you can loop over an iterable but you cannot access individual elements directly
-        - __Iterator__ is defined in the _iter_ method, you can turn any sequence into an iterable with it
-        - when a for loop os executed, the statement calls iter() in the object
-- Let's look at some examples:
+__Iteration__: 
+Take each item of something, like looping over a group of elements
+
+__Iterable__: 
+An object that can be used as a sequence which defines an _iter_ method (which allows loops) or a _next_ method (which accesses each element one at a time). Iterable object types includes lists, strings, dictionaries and sets. You can loop over an iterable but you cannot access individual elements directly
+
+__Iterator__: defined in the _iter_ method it allows you to turn any sequence into an iterable. When a for loop os executed, the statement calls iter() in the object.
+
+Let's look at some examples:
 
 1. Iterating over a list
 ```python
@@ -38,7 +37,6 @@ This prints
 ```
 
 2. An iterable Class
-
 ```python
     class myIterable(object):
         # initialize a list
@@ -59,8 +57,7 @@ This prints
     Hello World!
 ```
 
-- Okay, back to __ennumerate()__
-- It allows you to loop over a collection of items while keeping track of the current item’s index
+Let's return to the purpose of this note, __ennumerate()__. Ennumerate() allows you to loop over a collection of items while keeping track of the current item’s index. It iterates over the items via a for loop but tracks the index __and__ element instead of just one (depending on your use of range and len).
 ```python
     soccer_players = ["Ronaldo", "Hazard", "Mbappe"]
 
@@ -73,3 +70,5 @@ This outputs:
     1: Hazard
     2: Mbappe
 ```
+
+_Note: Python 3_

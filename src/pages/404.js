@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>A PAGE BUT NOT THE RIGHT ONE</h1>
-    <p>This page exists, it's just not the one you were looking for.</p>
+    <h1>page not found</h1>
+    <p>Complain about it to me at m at gmail dot com or forget you ever clicked.</p>
   </Layout>
 )
 

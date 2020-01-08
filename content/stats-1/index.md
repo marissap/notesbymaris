@@ -11,6 +11,6 @@ A confidence interval gives an estimated range of values which is likely to incl
 The selection of a confidence level expresses the probability of how likely it is to find the true value in the confidence interval. Common values choosen are 0.90, 0.95, and 0.99.
 
 Formula for CI:
-   x̄ **± Z(s/√n)**
+   `x̄ **± Z(s/√n)**`
    
 

@@ -1,44 +1,42 @@
 ---
 title: "Diving into React"
 description: 'React is a popular component-based, declarative library.'
-date: '2019-10-24'
+date: '2020-01-03'
 image:
 tags: ['react', 'web-dev', 'learning']
 ---
 
-*Note: I'm following the tutorial from Tania Rascia found [here](https://www.taniarascia.com/getting-started-with-react/) and the wonderful work of Ali Spittel found [here](https://welearncode.com/beginners-guide-react/)*
-
 ### Create React App
-This is an environment that takes care of setting up all the little
-thing.
-- It installs a bunch of dependencies like React (duh), react-dom, react-scripts
-  - react-scripts brings in the bulk of dependencies like webpack, babel, postcss, and eslint
-    - webpack bundles js files and generates static assets ([here](https://survivejs.com/webpack/what-is-webpack/) is a good webpack explainer)
-    - babel transforms your code to make it readable in the browser
-    - postcss transforms styles with js and supports variables and mixins
-    - eslint is for linting rules
-- You'll get folders liked node_modules and files like yarn.lock, .gitignore, and package.json
+This is an environment that takes care of setting up all the little things. It installs a host of dependencies such as React, react-dom, and react-scripts. Let's briefly run through the function of each dependency.
+
+- React-scripts brings in the bulk of dependencies like webpack, babel, postcss, and eslint.  
+
+- Webpack bundles js files and generates static assets ([here](https://survivejs.com/webpack/what-is-webpack/) is a good webpack explainer).  
+
+- Babel transforms your code to make it readable in the browser. Postcss transforms styles with js and supports variables and mixins.  
+
+- Eslint is for linting rules. 
+
+In addition, you'll get node_modules and files like yarn.lock, .gitignore, and package.json.
 
 ### React Basics
-##### JSX
-- javascript + xml
-- define an element, give it some html
+#### JSX
+JSX is a mix of JavaScript and XML. It essentially allows you to use HTML with JS. In the example below we define an element like you would in vanilla JS and associate it with some HTML.
 ```javascript
     const soccer = <h1 className="sport">Soccer</h1>
 ```
-- expressions use {}
+Additionally expressions can be used with curly brackets.
 ```javascript
 const player = 'Ronaldo'
-const statement = <h1>The best soccer player is {player}</h1>
+const statement = <h1>{player} is the best</h1>
 ```
 
-##### Components
-- these are the building blocks of a React application
-- a js class or function that accepts inputs (properties) and returns a React element that is a section of the UI
-- 2 types, class and simple (function)
-  - class components have states whereas simple ones are stateless
-  - class components can contain logic, manage loclal state, and can hold simple components
-  - a simple component
+#### Components
+Components are the building blocks of a React application. It can be thought of as a JS class or function that accepts inputs (properties) and returns a React element. The React element is a section of the UI.
+
+There are two types of functions—_class_ and simple (functional). Class components have states whereas simple ones are stateless. Furthermore, class components can contain logic, manage local states, and hold simple components.
+
+An example of a simple component:
 ```javascript
 const SimpleHeader = () => {
     return (
@@ -46,7 +44,8 @@ const SimpleHeader = () => {
     )
 }
 ```
-  - a class component with a funcitional component inside
+
+An example of a class component with a simple component inside:
 ```javascript
 class ClassHeader extends Component {
     render() {
@@ -56,15 +55,16 @@ class ClassHeader extends Component {
     }
 }
 ```
-- remember to export at the bottom so you can put your component wherever you wish!
+
+In order to be able to use this component within the UI of your application you must export it at the end of the file.
 ```javascript
 export default ClassHeader
 ```
 
-##### Props
-- instead of hardcoding data into our components we can pass it through when we create an instance of the component
-- we do this with proporties of a components aka props
-- let's take are earlier examples:
+#### Props
+Instead of hardcoding data into our components, React allows us to pass it through when we create an instance of the component. This allows us to use the same component in multiple places without repeating data. Remember a class component can take inputs, these inputs are called _props_ (shorthand for properties).
+
+Let's return to our earlier examples where we create a variable holding the data and pass it along to the component.
 ```javascript
 const SimpleHeader = () => {
     return (
@@ -81,11 +81,10 @@ class ClassHeader extends Component {
 }
 ```
 
-##### State
-- right now props are just being passed with variables, state allows us to modify data
-- if we want to change a state we need to bind it with the function that does the changing
-  - this is done in the constructor
-- this is an example of a state with an event handler
+#### State
+As of right now, props are being passed with variables. The variable doesn't change unless we go back into the code and explicitly do so. __States__ allow us to modify data dynamically and based on user interaction (events). If we want to change a state we need to bind it with the function that does the changing. This is done in the constructor of the component.
+
+In the following example of a state with an event handler we can see a two new functions added to our component called _constructor_ and _click_. _Constructor_ does a couple things. First, it binds the event of a click to the component and second, it sets the initial state at component construction. _Click_ is our event handler. It actually sets the state and tells what to set within the state.
 ```javascript
 class Header extends Component {
     constructor () {
@@ -112,3 +111,8 @@ class Header extends Component {
     }
 }
 ```
+
+### Resources
+1) [Getting Started with React](https://www.taniarascia.com/getting-started-with-react/) by Tania Rascia
+2) [Begineers Guide to React](https://welearncode.com/beginners-guide-react/) by Ali Spittel
+3) [Learn React in 10 Tweets](https://dev.to/chrisachard/learn-react-in-10-tweets-with-hooks-59bc) by Chris Achard

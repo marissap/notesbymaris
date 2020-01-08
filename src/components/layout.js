@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
         <div className="content">
           {children}
           <footer>
-            © 2018-19, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> with ♥ by Marissa
+            © 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> with 🖤by Marissa
           </footer>
         </div>
       </>

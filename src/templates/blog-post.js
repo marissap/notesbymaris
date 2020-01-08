@@ -31,6 +31,7 @@ function BlogPost(props) {
                 {image && <Img fluid={image.childImageSharp.fluid} />}
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
                 <div className="blog-post-tags">
+                    <span>tagged in: </span>
                     {tags.map((tag, i) => (
                         <a href={`/${tag}`} key={i}>#{tag}</a>
                     ))}

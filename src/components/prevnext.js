@@ -9,10 +9,10 @@ const PrevNext = (props) => {
     return (
         <ul className="prevnext">
             {prev && <li className="prev"><a href={"/notesbymaris" + prev.fields.slug}>
-                Previous: {" "}
+                <span className="tag-indicator">Previous:</span> {" "}
                 {prev.frontmatter.title}</a></li>}
             {next && <li className="next"><a href={"/notesbymaris" + next.fields.slug}>
-                Next: {" "} {next.frontmatter.title}
+                <span className="tag-indicator">Next:</span> {" "} {next.frontmatter.title}
 
             </a></li>}
         </ul>

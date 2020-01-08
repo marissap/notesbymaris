@@ -6,6 +6,7 @@
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background .5s;
+    margin-top: 5%;
 }
 
 .prevnext a:hover {
@@ -24,4 +25,8 @@
 
 .next {
     float: right;
+}
+
+.tag-indicator {
+    text-decoration: underline;
 }

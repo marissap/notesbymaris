@@ -69,7 +69,7 @@ can implement private and protected methods | **all** methods are public
     }
 ```
 
-######So when do we use each?
+###So when do we use each?
 Abstract: when we want the same functionality in every subclass for a specific operation (concrete method) and different functionality for some other operations (method signature)
 
 Interface: when unrelated classes will implement the interface, specifying the behavior of a particular data type, you want to take advantage of multiple inheritance of type
