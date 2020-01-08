@@ -53,7 +53,7 @@ export const listQuery = graphql`
           }
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "DD.MM.YY")
+            date(formatString: "DD.MM.YYYY")
             title
             description
           }
