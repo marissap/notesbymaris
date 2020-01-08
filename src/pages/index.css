@@ -35,6 +35,16 @@ ul {
     list-style-image: none;
 }
 
+.blog-content a:-webkit-any-link {
+    color: #000;
+    cursor: pointer;
+    text-decoration: 1px solid #000;
+}
+
+.blog-content a:hover {
+    text-decoration: none;
+}
+
 /* Homepage */
 .columnsContainer, footer, header { 
     position: relative; 

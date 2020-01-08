@@ -1,7 +1,7 @@
 ---
 title: "Diving into React"
 description: 'React is a popular component-based, declarative library.'
-date: '2020-01-03'
+date: '2019-12-21'
 image:
 tags: ['react', 'web-dev', 'learning']
 ---
