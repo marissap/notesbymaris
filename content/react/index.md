@@ -6,8 +6,20 @@ image:
 tags: ['react', 'web-dev', 'learning']
 ---
 
-### Create React App
-This is an environment that takes care of setting up all the little things. It installs a host of dependencies such as React, react-dom, and react-scripts. Let's briefly run through the function of each dependency.
+### Overview
+We’ve all heard of React. Since Facebook debuted it in 2013, the **library** has been widely adopted by the developer community and industry. It’s component-based, used for building user interfaces and requires additional libraries for routing and interaction with APIs.
+
+I emphasized library in the above paragraph because some (me too at first) thought about it as a framework. A library is just a collection of classes but may still include configuration data, documentation, templates, and type specifications. It leaves the developer more control whereas a framework is more constraining.
+
+### Why is React so popular?
+From where I’m standing its a couple things. Unidirectional data flow, intuitive state updating (especially with functional components), JSX, and components. All excellent attributes of React but let’s talk about the non-technical things that make something worth working with.
+
+Popularity means lots of developers, more developers means a large community writing articles and tutorials, making YouTube videos, and answering questions on Twitter and stack overflow. That support system is not only excellent for beginners but also for experienced developers who want to learn one of the many libraries that work with React.
+
+Excellent documentation. Not only is the official Read [tutorial](https://reactjs.org/tutorial/tutorial.html) a great primer, the actual documentation is quite extensive. Good documentation is a rarity but also the very best resource for developers. When a library has good docs (like Gatsby) USE IT.
+
+### How do I get started?
+So, after all that reading you must want to start coding. One of the easiest ways to get up and running is something called **create react app**. It contains all the configurations and dependencies you need to get started so you don’t have to worry about setting up the environment. Along with React there are four other main packages that get installed. Let's briefly run through each so you get an understanding of what is happening in the background.
 
 - React-scripts brings in the bulk of dependencies like webpack, babel, postcss, and eslint.  
 
@@ -17,102 +29,4 @@ This is an environment that takes care of setting up all the little things. It i
 
 - Eslint is for linting rules. 
 
-In addition, you'll get node_modules and files like yarn.lock, .gitignore, and package.json.
-
-### React Basics
-#### JSX
-JSX is a mix of JavaScript and XML. It essentially allows you to use HTML with JS. In the example below we define an element like you would in vanilla JS and associate it with some HTML.
-```javascript
-    const soccer = <h1 className="sport">Soccer</h1>
-```
-Additionally expressions can be used with curly brackets.
-```javascript
-const player = 'Ronaldo'
-const statement = <h1>{player} is the best</h1>
-```
-
-#### Components
-Components are the building blocks of a React application. It can be thought of as a JS class or function that accepts inputs (properties) and returns a React element. The React element is a section of the UI.
-
-There are two types of functions—_class_ and simple (functional). Class components have states whereas simple ones are stateless. Furthermore, class components can contain logic, manage local states, and hold simple components.
-
-An example of a simple component:
-```javascript
-const SimpleHeader = () => {
-    return (
-        <h1>Hello World!</h1>
-    )
-}
-```
-
-An example of a class component with a simple component inside:
-```javascript
-class ClassHeader extends Component {
-    render() {
-        return (
-            <SimpleHeader/>
-        )
-    }
-}
-```
-
-In order to be able to use this component within the UI of your application you must export it at the end of the file.
-```javascript
-export default ClassHeader
-```
-
-#### Props
-Instead of hardcoding data into our components, React allows us to pass it through when we create an instance of the component. This allows us to use the same component in multiple places without repeating data. Remember a class component can take inputs, these inputs are called _props_ (shorthand for properties).
-
-Let's return to our earlier examples where we create a variable holding the data and pass it along to the component.
-```javascript
-const SimpleHeader = () => {
-    return (
-        <h1>{this.props.greeting}</h1>
-    )
-}
-class ClassHeader extends Component {
-    render() {
-        const hello = 'Hello, World!'
-        return (
-            <SimpleHeader greeting={hello}/>
-        )
-    }
-}
-```
-
-#### State
-As of right now, props are being passed with variables. The variable doesn't change unless we go back into the code and explicitly do so. __States__ allow us to modify data dynamically and based on user interaction (events). If we want to change a state we need to bind it with the function that does the changing. This is done in the constructor of the component.
-
-In the following example of a state with an event handler we can see a two new functions added to our component called _constructor_ and _click_. _Constructor_ does a couple things. First, it binds the event of a click to the component and second, it sets the initial state at component construction. _Click_ is our event handler. It actually sets the state and tells what to set within the state.
-```javascript
-class Header extends Component {
-    constructor () {
-        super()
-        this.click = this.click.bind(this);
-        this.state = {
-            greeting: 'Welcome dude!'
-        }
-    }
-
-    click(e) {
-        this.setState({
-            greeting: 'Hey there bud!'
-        })
-    }
-
-    render() {
-        return (
-            <div>
-                <h2>{this.state.greeting}</h2>
-                <button onClick={this.click}>Click me</button>
-            </div>
-        )
-    }
-}
-```
-
-### Resources
-1) [Getting Started with React](https://www.taniarascia.com/getting-started-with-react/) by Tania Rascia
-2) [Begineers Guide to React](https://welearncode.com/beginners-guide-react/) by Ali Spittel
-3) [Learn React in 10 Tweets](https://dev.to/chrisachard/learn-react-in-10-tweets-with-hooks-59bc) by Chris Achard
+In addition, you'll get node_modules and package.json. After that, it’s all up to you!
